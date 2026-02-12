@@ -33,7 +33,9 @@ abstract class SupportedAlgorithmsTest(provider: CryptographyProvider) : Provide
         assertSupports(AES.CMAC, !context.provider.isApple && !context.provider.isWebCrypto && !context.provider.isCryptoKit)
         assertSupports(AES.CTR, !context.provider.isCryptoKit)
         assertSupports(AES.GCM, !context.provider.isApple)
+        assertSupports(ChaCha20, !context.provider.isApple && !context.provider.isWebCrypto && !context.provider.isCryptoKit)
         assertSupports(ChaCha20Poly1305, !context.provider.isApple && !context.provider.isWebCrypto)
+        assertSupports(Poly1305, !context.provider.isApple && !context.provider.isWebCrypto && !context.provider.isCryptoKit)
 
         assertSupports(HMAC)
 

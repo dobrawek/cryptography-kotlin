@@ -109,12 +109,19 @@ abstract class GenerateProviderTestsTask : DefaultTask() {
             "AesGcmTest",
             "AesGcmCompatibilityTest",
 
+            "ChaCha20Test",
+            "ChaCha20CompatibilityTest",
+            "ChaCha20TestvectorsTest",
             "ChaCha20Poly1305Test",
             "ChaCha20Poly1305CompatibilityTest",
 
             "HmacTest",
             "HmacCompatibilityTest",
             "HmacTestvectorsTest",
+
+            "Poly1305Test",
+            "Poly1305CompatibilityTest",
+            "Poly1305TestvectorsTest",
 
             "EcdsaTest",
             "EcdsaCompatibilityTest",
